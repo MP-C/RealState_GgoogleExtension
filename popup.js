@@ -22,3 +22,10 @@ function setPageBackgroundColor() {
     document.body.style.backgroundColor = color;
   });
 }
+
+
+// to check button visibility
+function checkBtn() {
+  document.getElementById("demo").style.color = "#333333";
+  console.log('buttonCalculate here');
+}

@@ -1,12 +1,12 @@
 {
-  "name": "Getting Started Example",
-  "description": "Build an Extension!",
+  "name": "RealState App Calculator to Investement",
+  "description": "Extension to easely calculate Investement in Real State directly from web page ",
   "version": "1.0",
   "manifest_version": 3,
   "background": {
-    "service_worker": "background.js"
+    "service_worker": "realStateServiceWorker.js"
   },
-  "permissions": ["storage", "activeTab", "scripting"],
+  "permissions": ["storage", "activeTab", "scripting", "icons"],
   "action": {
     "default_popup": "popup.html",
     "default_icon": {

@@ -2,12 +2,43 @@
 <html>
   <head>
     <link rel="stylesheet" href="button.css">
+    <script src="popup.js"></script>
+    <style type="text/css" href="popup.css"></style>
+  <title> RealState App</title>
   </head>
   <body>
-    <button id="changeColor"></button>
-    <button id="changeColor"></button>
-    <button id="changeColor"></button>
-    <button id="changeColor"></button>
+    <div>
+      <div>
+        <p>Property prices :</p>
+        <input placeholder="200000" size="5px" type="integer" id="price"></input>
+
+        <p>Initial loan Value</p>
+        <input placeholder="30000" size="5px" type="integer" id="price"></input>
+        
+        <p>Expenses : </p>
+        <div class="priceExpenses">
+          <input placeholder="350 " size="5px" type="integer" id="price"></input>
+          <label class="radio">
+            <input type="radio" name="dayPrice">
+            Day Price
+          </label>
+          <label class="radio">
+            <input type="radio" name="weeklyPrice">
+            Weekly Price
+          </label>
+          <label class="radio" >
+            <input type="radio" name="monthlyPrice">
+            Monthly Price
+          </label>
+        </div>
+        <div>
+          <p>Investors :</p>
+          <input name="investors" placeholder="1,2,3.." type="integer"  value="1" size="1px">
+        </div>
+
+      </div>
+    </div>
+    <button class="button" onclick="checkBtn()" type="submit" color="#9BE5B5">Calculate</button>
     <script src="popup.js"></script>
   </body>
 </html>
